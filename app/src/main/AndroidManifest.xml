@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.androidfunctionality">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".start_activity_for_result.StartActivityForResult2"></activity>
+        <activity android:name=".mains.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".searchview.SearchViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".toasty.ToastyActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".sharedpreference.SharedPreferenceActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".dodge_inset_edge.DodgeInsetEdgeActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".up_backbutton.BackButtonActivity" />
+        <activity
+            android:name=".up_backbutton.BackButtonActivity2"
+            android:parentActivityName=".up_backbutton.BackButtonActivity"
+            tools:targetApi="jelly_bean" />
+        <activity android:name=".start_activity_for_result.StartActivityForResultActivity" />
+        <activity android:name=".menu.PopUpMenuActivity" />
+        <activity android:name=".menu.OptionMenuActivity" />
+        <activity android:name=".random_text_view.RandomTextViewActivity" />
+        <activity android:name=".mains.DemoActivity" />
+    </application>
+
+</manifest>
