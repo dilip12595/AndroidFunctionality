@@ -2,6 +2,7 @@ package com.example.androidfunctionality.mains;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import com.example.androidfunctionality.R;
 import com.example.androidfunctionality.dodge_inset_edge.DodgeInsetEdgeActivity;
 import com.example.androidfunctionality.menu.OptionMenuActivity;
 import com.example.androidfunctionality.menu.PopUpMenuActivity;
+import com.example.androidfunctionality.parcelable.ParcelableActivity;
 import com.example.androidfunctionality.random_text_view.RandomTextViewActivity;
 import com.example.androidfunctionality.searchview.SearchViewActivity;
 import com.example.androidfunctionality.sharedpreference.SharedPreferenceActivity;
@@ -97,6 +99,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
 
                     case NINE:
                         intent = new Intent(context, StartActivityForResultActivity.class);
+                        context.startActivity(intent);
+                        break;
+
+                    case TEN:
+                        intent = new Intent(context, ParcelableActivity.class);
                         context.startActivity(intent);
                         break;
 

@@ -11,8 +11,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".start_activity_for_result.StartActivityForResult2"></activity>
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+
         <activity android:name=".mains.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,6 +44,9 @@
         <activity android:name=".menu.OptionMenuActivity" />
         <activity android:name=".random_text_view.RandomTextViewActivity" />
         <activity android:name=".mains.DemoActivity" />
+        <activity android:name=".parcelable.ParcelableActivity2"/>
+        <activity android:name=".parcelable.ParcelableActivity" />
+        <activity android:name=".start_activity_for_result.StartActivityForResult2" />
     </application>
 
 </manifest>
