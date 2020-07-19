@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidfunctionality.R;
 import com.example.androidfunctionality.dodge_inset_edge.DodgeInsetEdgeActivity;
+import com.example.androidfunctionality.firstlaunch.ExecuteCodeOnFirstLaunchActivity;
 import com.example.androidfunctionality.menu.OptionMenuActivity;
 import com.example.androidfunctionality.menu.PopUpMenuActivity;
 import com.example.androidfunctionality.parcelable.ParcelableActivity;
@@ -104,6 +105,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
 
                     case TEN:
                         intent = new Intent(context, ParcelableActivity.class);
+                        context.startActivity(intent);
+                        break;
+
+                    case ELEVEN:
+                        intent = new Intent(context, ExecuteCodeOnFirstLaunchActivity.class);
                         context.startActivity(intent);
                         break;
 

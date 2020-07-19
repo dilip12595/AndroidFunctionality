@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         listData.add(new MainsData("Random text view in relative layout.", MainsType.EIGHT));
         listData.add(new MainsData("Uses of startActivityForResult method.", MainsType.NINE));
         listData.add(new MainsData("Uses of Parcelable.", MainsType.TEN));
+        listData.add(new MainsData("Execute code on first start only.", MainsType.ELEVEN));
     }
 
 }
