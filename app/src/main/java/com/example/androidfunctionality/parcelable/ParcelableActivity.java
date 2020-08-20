@@ -24,7 +24,7 @@ public class ParcelableActivity extends AppCompatActivity {
         itemList.add(new Item("Dilip","jaiswal"));
         itemList.add(new Item("Rajeev","prasad"));
         itemList.add(new Item("Rajdeep","mahto"));
-        itemList.add(new Item("Dheeraj","tiari"));
+        itemList.add(new Item("Dheeraj","tiwari"));
         itemList.add(new Item("Rocky","thakur"));
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
