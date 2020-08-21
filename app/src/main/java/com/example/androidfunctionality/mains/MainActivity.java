@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
         listData.add(new MainsData("Uses of startActivityForResult method.", MainsType.NINE));
         listData.add(new MainsData("Uses of Parcelable.", MainsType.TEN));
         listData.add(new MainsData("Execute code on first start only.", MainsType.ELEVEN));
+        listData.add(new MainsData("View design.", MainsType.TWELVE));
+        listData.add(new MainsData("Sliding animation between activities.", MainsType.THIRTEEN));
     }
 
 }

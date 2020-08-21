@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidfunctionality.R;
+import com.example.androidfunctionality.animation.MainAnimationActivity;
 import com.example.androidfunctionality.dodge_inset_edge.DodgeInsetEdgeActivity;
 import com.example.androidfunctionality.firstlaunch.ExecuteCodeOnFirstLaunchActivity;
 import com.example.androidfunctionality.menu.OptionMenuActivity;
@@ -23,10 +24,11 @@ import com.example.androidfunctionality.sharedpreference.SharedPreferenceActivit
 import com.example.androidfunctionality.start_activity_for_result.StartActivityForResultActivity;
 import com.example.androidfunctionality.toasty.ToastyActivity;
 import com.example.androidfunctionality.up_backbutton.BackButtonActivity;
+import com.example.androidfunctionality.view_design.ViewDesignActivity;
 
 import java.util.List;
 
-public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
+public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     private List<MainsData> dataList;
     private Context context;
@@ -40,7 +42,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.mains_data,
-            parent, false);
+                parent, false);
         return new ViewHolder(view);
     }
 
@@ -56,7 +58,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
 
                 Intent intent;
 
-                switch (data.getType()){
+                switch (data.getType()) {
 
                     case FIRST:
                         intent = new Intent(context, SearchViewActivity.class);
@@ -110,6 +112,16 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
 
                     case ELEVEN:
                         intent = new Intent(context, ExecuteCodeOnFirstLaunchActivity.class);
+                        context.startActivity(intent);
+                        break;
+
+                    case TWELVE:
+                        intent = new Intent(context, ViewDesignActivity.class);
+                        context.startActivity(intent);
+                        break;
+
+                    case THIRTEEN:
+                        intent = new Intent(context, MainAnimationActivity.class);
                         context.startActivity(intent);
                         break;
 

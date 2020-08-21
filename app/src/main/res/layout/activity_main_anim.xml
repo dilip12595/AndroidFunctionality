@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".animation.MainAnimationActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="how we can add a sliding transition between activities. We will first apply them to specific activities only by using the overridePendingTransition method after starting an intent and also after calling the finish method. Then we will learn how to apply them globally to our whole app by creating a seperate theme in our styles.xml file and apply it to our app theme with the windowAnimationStyle attribute."
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="CLICK" />
+
+</RelativeLayout>

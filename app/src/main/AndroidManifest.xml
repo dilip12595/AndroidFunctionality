@@ -3,17 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.androidfunctionality">
 
+    <!-- use permission -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="AllowBackup">
-        <activity android:name=".firstlaunch.ExecuteCodeOnFirstLaunchActivity"/>
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup"
+        tools:targetApi="m">
+
+        <!-- main activity app launcher activity-->
         <activity android:name=".mains.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,31 +26,57 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- search view activity -->
         <activity
             android:name=".searchview.SearchViewActivity"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name=".toasty.ToastyActivity"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".sharedpreference.SharedPreferenceActivity"
-            android:theme="@style/AppTheme" />
+
+        <!-- toast in different way activity -->
+        <activity android:name=".toasty.ToastyActivity" />
+
+        <!-- use of shared preference activity -->
+        <activity android:name=".sharedpreference.SharedPreferenceActivity" />
+
         <activity
             android:name=".dodge_inset_edge.DodgeInsetEdgeActivity"
             android:theme="@style/AppTheme" />
+
+        <!-- back button functionality -->
         <activity android:name=".up_backbutton.BackButtonActivity" />
         <activity
             android:name=".up_backbutton.BackButtonActivity2"
             android:parentActivityName=".up_backbutton.BackButtonActivity"
             tools:targetApi="jelly_bean" />
-        <activity android:name=".start_activity_for_result.StartActivityForResultActivity" />
+
+        <!-- menu activity -->
         <activity android:name=".menu.PopUpMenuActivity" />
         <activity android:name=".menu.OptionMenuActivity" />
+
+        <!-- random text showing activity -->
         <activity android:name=".random_text_view.RandomTextViewActivity" />
         <activity android:name=".mains.DemoActivity" />
+
+        <!-- parcelable activity -->
         <activity android:name=".parcelable.ParcelableActivity2" />
         <activity android:name=".parcelable.ParcelableActivity" />
+
+        <!-- use of start activity for result-->
         <activity android:name=".start_activity_for_result.StartActivityForResult2" />
+        <activity android:name=".start_activity_for_result.StartActivityForResultActivity" />
+
+        <!-- view design activity-->
+        <activity android:name=".view_design.ViewDesignActivity" />
+
+        <!-- animation activity -->
+        <activity android:name=".animation.ActivityAnim1"/>
+        <activity android:name=".animation.ActivityAnim3" />
+        <activity android:name=".animation.ActivityAnim2" />
+        <activity android:name=".animation.MainAnimationActivity" />
+
+        <!-- some code execution that execute only on app first launch-->
+        <activity android:name=".firstlaunch.ExecuteCodeOnFirstLaunchActivity" />
+
     </application>
 
 </manifest>
